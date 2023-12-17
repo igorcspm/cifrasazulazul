@@ -6,8 +6,9 @@
 }
 
 .right {
+    position: relative;
     width: 40%;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -30,7 +31,17 @@
     white-space: pre;
     font-size: 21px;
     flex-direction: column;
-    /* text-indent: 5%; */
+}
+
+.faixa-vermelha {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 87%;
+    height: 30px;
+    background-color: red;
+    opacity: 80%;
+    z-index: -1;
 }
 
 h4 {
@@ -38,6 +49,7 @@ h4 {
     font-size: 25px;
     margin-left: 15%;
     justify-content: center;
+    z-index: 1;
 }
 
 b {
@@ -85,5 +97,9 @@ body {
     p {
         padding-left: 20px;
         white-space: pre-line;
+    }
+
+    .faixa-vermelha {
+        width: 87%;
     }
 }
