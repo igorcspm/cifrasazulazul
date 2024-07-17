@@ -22,10 +22,12 @@
     background-color: blue;
     border-radius: 10px;
     padding: 2px;
-    min-height: 97vh;
+    min-height: 50vh;
+    max-height: 97vh;
+
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: rgb(97, 97, 255) rgb(0, 0, 108);
+    scrollbar-color: blue rgb(0, 0, 108);
 }
 
 .texto-cifra {
@@ -80,6 +82,7 @@ p {
 }
 
 body {
+    overflow-y: hidden;
     background-color: #bfddf3;
     font-family: 'Consolas', monospace;
 }
