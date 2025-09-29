@@ -14,18 +14,18 @@
                 <div class="container right faixa-vermelha"></div>
                 <h4>Lista de músicas</h4>
                 <ul id="lista-musicas">
-                    <li onclick="mostraCifra('cifra-mcv');">mcv</li>
-                    <li onclick="mostraCifra('cifra-vallet');">vallet park menino marcelo</li>
-                    <li onclick="mostraCifra('cifra-parque');">um parque de diversões da cabeça</li>
-                    <li onclick="mostraCifra('cifra-qqlr');">qualquer coisa fields forever</li>
-                    <li onclick="mostraCifra('cifra-clifford');">clifford, o cão vermelho</li>
-                    <li onclick="mostraCifra('cifra-cavalos');">cavalos marinhos</li>
-                    <li onclick="mostraCifra('cifra-basingse');">ba-sing-se</li>
-                    <li onclick="mostraCifra('cifra-rossellini');">aquele filme do rossellini</li>
-                    <li onclick="mostraCifra('cifra-acordo');">acordo</li>
-                    <li onclick="mostraCifra('cifra-soda');">soda</li>
-                    <li onclick="mostraCifra('cifra-victor');">victor heringer</li>
-                    <li onclick="mostraCifra('cifra-formas');">formas de voltar para casa</li>
+                    <li onclick="showTabs('cifra-mcv');">mcv</li>
+                    <li onclick="showTabs('cifra-vallet');">vallet park menino marcelo</li>
+                    <li onclick="showTabs('cifra-parque');">um parque de diversões da cabeça</li>
+                    <li onclick="showTabs('cifra-qqlr');">qualquer coisa fields forever</li>
+                    <li onclick="showTabs('cifra-clifford');">clifford, o cão vermelho</li>
+                    <li onclick="showTabs('cifra-cavalos');">cavalos marinhos</li>
+                    <li onclick="showTabs('cifra-basingse');">ba-sing-se</li>
+                    <li onclick="showTabs('cifra-rossellini');">aquele filme do rossellini</li>
+                    <li onclick="showTabs('cifra-acordo');">acordo</li>
+                    <li onclick="showTabs('cifra-soda');">soda</li>
+                    <li onclick="showTabs('cifra-victor');">victor heringer</li>
+                    <li onclick="showTabs('cifra-formas');">formas de voltar para casa</li>
                 </ul>
             </div>
             <div id="left-container" class="container left">
@@ -443,7 +443,7 @@
                 });
             </script>
             <script>
-                function mostraCifra(id) {
+                function showTabs(id) {
                     var leftContainer = document.getElementById('left-container');
                     leftContainer.style.display = 'block';
 

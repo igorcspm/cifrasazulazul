@@ -129,3 +129,61 @@ body {
         padding-left: 20px;
     }
 }
+
+/* ajuste para celulares em modo retrato */
+@media (max-width: 480px) and (orientation: portrait) {
+    body {
+        overflow-y: auto; /* permite scroll */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto; /* ativa scroll no container também */
+        min-height: 100vh;
+    }
+
+    .right {
+        width: 100%;
+        order: 1;
+    }
+
+    .left {
+        width: 100%;
+        max-height: none;  /* remove limite de altura */
+        padding: 5px;
+    }
+
+    .texto-cifra {
+        font-size: 14px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .faixa-vermelha {
+        width: 100%;
+        top: 25px;
+        height: 18px;
+    }
+
+    .tablatura {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    ul {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    p {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
