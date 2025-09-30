@@ -120,7 +120,7 @@ body {
     }
 
     .tablatura {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     h4 {
@@ -177,7 +177,7 @@ body {
 
     /* Reduz o tamanho das fontes para se adequarem à tela menor */
     .tablatura {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     h4 {
