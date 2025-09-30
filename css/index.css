@@ -135,3 +135,61 @@ body {
         padding-left: 20px;
     }
 }
+
+@media (max-width: 740px) {
+    /* Permite que a página inteira role, o que é natural em celulares */
+    body {
+        overflow-y: auto;
+    }
+    
+    /* Empilha as colunas verticalmente em vez de lado a lado */
+    .container {
+        flex-direction: column;
+        overflow-y: visible; /* Remove a rolagem interna do container */
+    }
+
+    /* Coloca o conteúdo da cifra (right) antes do menu (left) */
+    .right {
+        order: 0;
+        /* Adiciona um espaço abaixo para separar do menu que virá em seguida */
+        margin-bottom: 30px; 
+    }
+
+    .left {
+        order: 1;
+        min-height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        max-height: none;
+        overflow-y: visible; /* A rolagem agora é na página, não mais aqui */
+        margin: 0 0; /* Adiciona margens laterais para não colar nas bordas */
+    }
+
+    /* Permite que o texto da cifra quebre a linha para não vazar da tela */
+    .texto-cifra {
+        white-space: pre-wrap; /* Quebra a linha mas mantém os espaços da formatação */
+        font-size: 16px; /* Reduz a fonte para melhor leitura */
+    }
+
+    /* Ajusta a faixa vermelha para o novo tamanho da fonte do título */
+    .faixa-vermelha {
+        height: 22px;
+        top: 29px;
+    }
+
+    /* Reduz o tamanho das fontes para se adequarem à tela menor */
+    .tablatura {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    /* Reduz o padding lateral excessivo em parágrafos */
+    p {
+        padding-left: 20px;
+    }
+}
