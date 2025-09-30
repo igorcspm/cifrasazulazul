@@ -25,7 +25,8 @@ iframe {
 
 .ep-formas-spotify,
 .album-azulazul-spotify {
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
@@ -52,7 +53,8 @@ iframe {
 
     .ep-formas-spotify,
     .album-azulazul-spotify {
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     p {
