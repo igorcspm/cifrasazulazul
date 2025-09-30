@@ -1,0 +1,54 @@
+.menu {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    position: sticky; /* gruda no topo ao rolar */
+    top: 0;
+    z-index: 10;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 20px 0 20px;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+    color: white; /* muda a cor ao passar o mouse */
+    font-weight: bold;
+}
+
+.menu-divider {
+    border: none;
+    border-top: 2px solid #cfe3f1;
+    margin: 0;
+}
+
+@media (max-width: 740px) {
+    .menu {
+        overflow-x: auto;      /* permite scroll horizontal */
+        -webkit-overflow-scrolling: touch; /* suaviza scroll no iOS */
+    }
+
+    .menu ul {
+        flex-wrap: nowrap;     /* impede que os itens quebrem linha */
+        gap: 20px;             /* ajusta o espaçamento */
+        margin-left: 10px;     /* ajusta margem para celular */
+    }
+
+    .menu li a {
+        font-size: 18px;       /* reduz um pouco o tamanho da fonte */
+    }
+}

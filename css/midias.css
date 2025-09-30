@@ -1,0 +1,66 @@
+body {
+    background-color: #bfddf3;
+    font-family: 'Consolas', monospace;
+    overflow-x: hidden;
+}
+
+.midias-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faixa-vermelha {
+    width: 50%;
+    text-align: right;
+    background-color: red;
+    opacity: 80%;
+}
+
+iframe {
+    padding-left: 50px;
+}
+
+.ep-formas-spotify,
+.album-azulazul-spotify {
+    padding-bottom: 30px;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: medium;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 740px) {
+    .midias-container {
+        padding: 0 10px; /* reduz espaçamento lateral */
+        width: 98%;
+    }
+
+    .faixa-vermelha {
+        width: 90%;
+        text-align: right; /* melhor alinhamento em telas pequenas */
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        padding-left: 0; /* remove padding excessivo */
+        margin-right: 10px;
+        width: 100%;     /* ocupa largura total da tela */
+    }
+
+    .ep-formas-spotify,
+    .album-azulazul-spotify {
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: medium; /* ajusta tamanho da fonte para celular */
+    }
+}
