@@ -89,8 +89,14 @@ body {
 
 
 @media (max-width: 834px) {
+    body {
+        overflow-y: auto;
+    }
+    
     .container {
         flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .right {
@@ -133,20 +139,19 @@ body {
 /* ajuste para celulares em modo retrato */
 @media (max-width: 480px) and (orientation: portrait) {
     body {
-        overflow-y: auto; /* permite scroll */
+        overflow-y: auto;
     }
 
     .container {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        overflow-y: auto; /* ativa scroll no container também */
-        min-height: 100vh;
+        overflow-y: auto;
     }
 
     .right {
         width: 100%;
-        order: 1;
+        order: 0;
     }
 
     .left {
@@ -162,7 +167,7 @@ body {
     }
 
     .faixa-vermelha {
-        width: 100%;
+        width: 87%;
         top: 25px;
         height: 18px;
     }
